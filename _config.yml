@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+github: [metadata]
+
 title: ToMiDevelop's home place
 email: ToMiDevelop@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  What shoul I write over here?
-  Bullshit?
-  Or not bullshit?
+  A small website used to gather information about DIY programmable electronics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tomidevelop.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -31,6 +31,7 @@ github_username:  ToMiDevelop
 
 # Build settings
 #theme: minima
+#remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 plugins:
   - jekyll-feed
@@ -44,10 +45,15 @@ navigation:
     link: ./index.html
   - name: My projects
     link: ./projects.html
+    sublist:
+      - name: Bike dashboard
+        link: https://github.com/ToMiDevelop/BikeDashboard
+      - name: Robo spider
+        link: https://github.com/ToMiDevelop/Robo-spider
   - name: About the author
     link: ./about.html
-  - name: Useful resources
-    link: ./extresources.html
+  #- name: Useful resources
+  #  link: ./extresources.html
 
 
 # Exclude from processing.
