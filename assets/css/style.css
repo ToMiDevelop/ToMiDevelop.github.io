@@ -215,9 +215,7 @@ hr { border: 0; background: var(--clr-splitter-blockquote-and-section); height: 
   .sidebar { width: 375px; flex-shrink: 0; position: relative; margin: 0; /* Upewniamy się, że nie ma marginesu */ padding: 0; /* Upewniamy się, że nie ma paddingu */ }
   .sidebar-footer { width: auto; padding-bottom: inherit; position: relative; align-self: flex-start; display: none; }
   section { max-width: 730px; flex-grow: 1; margin-left: 20px; /* Dodajemy odstęp od sidebaru */ min-width: 0; box-sizing: border-box; /* Upewniamy się, że padding i marginesy są uwzględnione */ } }
-img { border-radius: 4%; }
-
-.my_img_style { display: block; margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 30px; }
+.my_img_style { display: block; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; border-radius: 2%; }
 
 .my_p_style { margin-top: 30px; margin-bottom: 10px; }
 

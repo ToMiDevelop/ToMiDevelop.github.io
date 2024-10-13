@@ -100,9 +100,9 @@
     <li><a href="./projects.html">My projects</a>
         
         <ul class="sublist">
-            <li><a href="https://github.com/ToMiDevelop/BikeDashboard">Bike dashboard</a></li>
-            <li><a href="https://github.com/ToMiDevelop/Robo-spider">Robo spider</a></li>
-            <li><a href="https://github.com/ToMiDevelop/Micropython-Tron-Digits/">Micropython Tron Digits</a></li>
+            <li><a href="./projects.html#BikeDashboard">Bike dashboard</a></li>
+            <li><a href="./projects.html#RoboSpider">Robo spider</a></li>
+            <li><a href="./projects.html#TronDigits">Micropython Tron Digits</a></li>
         </ul>
         
     </li>
@@ -131,9 +131,9 @@
       <li><a href="./projects.html">My projects</a>
           
           <ul class="sublist">
-              <li><a href="https://github.com/ToMiDevelop/BikeDashboard">Bike dashboard</a></li>
-              <li><a href="https://github.com/ToMiDevelop/Robo-spider">Robo spider</a></li>
-              <li><a href="https://github.com/ToMiDevelop/Micropython-Tron-Digits/">Micropython Tron Digits</a></li>
+              <li><a href="./projects.html#BikeDashboard">Bike dashboard</a></li>
+              <li><a href="./projects.html#RoboSpider">Robo spider</a></li>
+              <li><a href="./projects.html#TronDigits">Micropython Tron Digits</a></li>
           </ul>
           
       </li>
