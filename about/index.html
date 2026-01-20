@@ -18,7 +18,7 @@
 
 
 
-<link href="/css/style.min.66302fa6c122ab7804faa4bd6465554ac4d746c25294af622826d0445b79ab94.css" rel="stylesheet">
+<link href="/css/style.min.ecf30a464dc01e9d161cf809f218c8b6d1a74af4c0cef3f07eab8b428fdf6a75.css" rel="stylesheet">
 
 
 
@@ -59,73 +59,82 @@
         <div class="content">
             <main class="main">
                 
-<div class="projects-container">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<div class="page-title">
     <h1>About ToMiDevelop</h1>
+</div>
+
+<div class="information-container">
 
     <div class="card">
-        <h2 id="BikeDashboard">Mathematician</h2>
+        <h2 id="Mathematician">Mathematician</h2>
         <p class="project-desc">
-            First of all I'm a master of maths, this implicates my way of thinking,
-            interacting with the world, looking at daily problems and ways to solve 'em.
-            Mathematics is one the most important parts of me beeing... me!
-            My formal eduaction gave me also a clear perspective at solving
-            problems and creating algorithms with formal logic in the
-            backend - this makes a fundament of my programming activities.
+            First of all I'm a&nbsp;master of maths, this implicates my way of&nbsp;thinking,
+            interacting with the world, looking at&nbsp;daily problems and ways to&nbsp;solve 'em.
+            Mathematics is one the most important parts of&nbsp;me beeing... me!
+            My formal eduaction gave me also a&nbsp;clear perspective at&nbsp;solving problems
+            and creating algorithms with formal logic in the backend - this makes
+            a&nbsp;fundament of&nbsp;my programming activities.
         </p>
         <img src="/pics/pi.jpg" alt="Bike Dashboard" class="my_img_style" />
     </div>
 
     <div class="card">
-        <h2 id="RoboSpider">Coder</h2>
+        <h2 id="Coder">Coder</h2>
         <p class="project-desc">
-            I started to code when I Was looking for good software tools,
-            which could help me in my research work - and found R!
-            Then my journey in exploring programming has started.
-            On my way I discovered .NET and C#, Python and...
-            MicroPython for my hobby DIY projects. Now I'm a .NET programmer
-            in my professional life and a big enthusiast of MicroPython
-            on microcontrollers serving the logic and control over my DIY projects.
+            I&nbsp;started to code when I&nbsp;Was looking for good software tools,
+            which could help me in&nbsp;my research work - and found R!
+            Then my journey in&nbsp;exploring programming has started.
+            On my way I&nbsp;discovered .NET and C#, Python and... MicroPython
+            for my hobby DIY projects. Now I'm a .NET & Python programmer in&nbsp;my
+            professional life. I'm also a&nbsp;big enthusiast of MicroPython
+            on microcontrollers serving the logic and control over my DIY projects. 
         </p>
-        <img src="/pics/plants.jpg" alt="Robo Spider" class="my_img_style" />
+        <img src="/pics/python.jpg" alt="Smart Plant" class="my_img_style" />
     </div>
 
     <div class="card">
-        <h2 id="SmartPlantLight">Plant daddy</h2>
+        <h2 id="PalntDaddy">Plant daddy</h2>
         <p class="project-desc">
-            Yes, I'm keen on keeping plants and my home is full of 'em.
-            Maybe I'll create some DIY devices mafe specially for plants?
-            Who knows...
+            Yes, I'm&nbsp;keen on&nbsp;keeping plants and my home is full of&nbsp;'em.
+            I'm&nbsp;also designing and creating DIY smart appliances
+            dedicated specially for plant lovers! Why not to use my knowledge with
+            a&nbsp;purpose of&nbsp;easier plant care and maintance?
+            Aroids, dracaenas and ficuses are my&nbsp;biggest loves from the plant world.
+            One day I'm&nbsp;hoping to create a&nbsp;lush, stunning green wall in my home office.
+            Imagine all of the DIY smart electronic gagdest which could be&nbsp;done to&nbsp;make
+            this mass of&nbsp;green organisms happy!
         </p>
-        <img src="/pics/python.jpg" alt="Smart Plant" class="my_img_style" />
+        <img src="/pics/plants.jpg" alt="Robo Spider" class="my_img_style" />
     </div>
 
 </div>
 
 <style>
-    .projects-container {
-        max-width: 800px;
+    .page-title {
+        text-align: left;
+        padding: 25px;
+    }
+    
+    .information-container {
+        max-width: 1400px;
         margin: 0 auto;
-        padding: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+        padding: 25px;
     }
 
     .card {
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid #444;  
-        border-radius: 12px;
+        border-radius: 5px;
         padding: 25px;
         margin-bottom: 40px;
-         
-        transition: border-color 0.3s ease, background 0.3s ease; 
-    }
-
-    .card:hover {
-         
-        border-color: #9e9e9e;
-        
-         
-        background: rgba(255, 255, 255, 0.08); 
-        
-         
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     .project-desc {
@@ -137,14 +146,14 @@
         width: 100%;
         max-width: 600px;
         height: auto;
-        border-radius: 12px;
+        border-radius: 5px;
         margin-top: 15px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .projects-container h1 {
+    .information-container h1 {
         color: #ffffff;
         text-align: left;
     }
@@ -160,9 +169,26 @@
         text-align: justify;
     }
 
-    .card a {
-        color: #58a6ff;
-        text-decoration: underline;
+    @media (max-width: 1200px) {
+        .information-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding: 25px;
+    }
+    }
+
+    @media (max-width: 850px) {
+        .information-container {
+        max-width: 640px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+        padding: 25px;
+    }
     }
 </style>
 
