@@ -80,9 +80,17 @@
             The primary language for the text based UI is&nbsp;Polish. In the repositry you'll find an&nbsp;English translation
             table and more project detials - including a&nbsp;custom PCB board desing.
         </p>
-        <div class="project-repo-status">
-            <p>Repository: <a href="https://github.com/ToMiDevelop/BikeDashboard" target="_blank" rel="noopener">Github</a><br>Status: In progress</p>
+        <div class="project-info">
+            <div class="info-item">
+                <span class="info-label">REPO:</span>
+                <span class="info-value"><a href="https://github.com/ToMiDevelop/BikeDashboard">GITHUB</a></span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">STATUS:</span>
+                <span class="info-value status-in-progress">In progress</span>
+            </div>
         </div>
+        
         <img src="/pics/bike_dashboard.jpg" alt="Bike Dashboard" class="my_img_style" />
     </div>
 
@@ -102,8 +110,15 @@
             One of&nbsp;the key design principles was not to&nbsp;use wheels.
             The goal was achieved by&nbsp;combining together two sets of&nbsp;spider like mechanical legs.
         </p>
-        <div class="project-repo-status">
-            <p>Repository: <a href="https://github.com/ToMiDevelop/Robo-spider" target="_blank" rel="noopener">Github</a><br>Status: Finished</p>
+        <div class="project-info">
+            <div class="info-item">
+                <span class="info-label">REPO:</span>
+                <span class="info-value"><a href="https://github.com/ToMiDevelop/Robo-spider">GITHUB</a></span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">STATUS:</span>
+                <span class="info-value status-finished">Finished</span>
+            </div>
         </div>
         <img src="/pics/robo_spider.jpg" alt="Robo Spider" class="my_img_style" />
     </div>
@@ -124,8 +139,15 @@
             This one is&nbsp;an interesting example of&nbsp;increasing the functionality of&nbsp;simple electronicaly controlled appliances.
             Over here it was achieved by combining a&nbsp;cheap plant lamp controlled by a&nbsp;small with a&nbsp;ESP32 module.
         </p>
-        <div class="project-repo-status">
-            <p>Repository: <a href="https://github.com/ToMiDevelop/ESPHome-Smart-Plant-Light" target="_blank" rel="noopener">Github</a><br>Status: Finished</p>
+        <div class="project-info">
+            <div class="info-item">
+                <span class="info-label">REPO:</span>
+                <span class="info-value"><a href="https://github.com/ToMiDevelop/ESPHome-Smart-Plant-Light">GITHUB</a></span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">STATUS:</span>
+                <span class="info-value status-finished">Finished</span>
+            </div>
         </div>
         <img src="/pics/smart_plant.jpg" alt="Smart Plant" class="my_img_style" />
     </div>
@@ -151,8 +173,15 @@
             This is a&nbsp;custom MicroPython module for drawing nice 2x2 character digits on&nbsp;16x2 character displays.
             Can be a&nbsp;great addition when planning to&nbsp;make any kind of a&nbsp;counter or&nbsp;digital clock.
         </p>
-        <div class="project-repo-status">
-            <p>Repository: <a href="https://github.com/ToMiDevelop/Micropython-Tron-Digits" target="_blank" rel="noopener">Github</a><br>Status: Finished</p>
+        <div class="project-info">
+            <div class="info-item">
+                <span class="info-label">REPO:</span>
+                <span class="info-value"><a href="https://github.com/ToMiDevelop/Micropython-Tron-Digits">GITHUB</a></span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">STATUS:</span>
+                <span class="info-value status-finished">Finished</span>
+            </div>
         </div>
         <img src="/pics/tron.jpg" alt="Tron Digits" class="my_img_style" />
     </div>
@@ -186,23 +215,44 @@
     }
 
     .project-info {
-        display: grid;
-        grid-template-columns: auto auto;
+        margin-top: 15px;
+        padding-top: 10px;
+        font-family: monospace;
+        font-size: 0.95rem;
     }
 
-    .project-repo-status {
-        padding-right: 1em;
-    }
-   
-    .project-repo-status a {
-        color: #b9c1d3; 
-        text-decoration: none;  
-        transition: color 0.3s ease;  
+    .info-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
     }
 
-     
-    .project-repo-status a:hover {
-        color: #9e9e9e;  
+    .info-label {
+        color: #888;  
+    }
+
+    .info-value {
+        color: #fff;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    .status-in-progress {
+        color: #ffca28;
+    }
+
+    .status-finished {
+        color: #4caf50;
+    }
+
+    .info-value a {
+        color: #b9c1d3;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .info-value a:hover {
+        color: #9e9e9e;
     }
 
     .project-desc {
