@@ -68,7 +68,18 @@
 
     <div class="card">
         <h2 id="Mathematician">Mathematician</h2>
-        <p class="project-desc">
+        
+        <div class="tags-container">
+            
+            <span class="tag">probability theory</span>
+            
+            <span class="tag">stochastical processes</span>
+            
+            <span class="tag">statistics</span>
+            
+        </div>
+        
+        <p class="desc">
             First of all I'm a&nbsp;master of maths, this implicates my way of&nbsp;thinking,
             interacting with the world, looking at&nbsp;daily problems and ways to&nbsp;solve 'em.
             Mathematics is one the most important parts of&nbsp;me beeing... me!
@@ -76,12 +87,26 @@
             and creating algorithms with formal logic in the backend - this makes
             a&nbsp;fundament of&nbsp;my programming activities.
         </p>
-        <img src="/pics/pi.jpg" alt="Bike Dashboard" class="my_img_style" />
     </div>
 
     <div class="card">
         <h2 id="Coder">Coder</h2>
-        <p class="project-desc">
+        
+        <div class="tags-container">
+            
+            <span class="tag">R</span>
+            
+            <span class="tag">Python</span>
+            
+            <span class="tag">.NET</span>
+            
+            <span class="tag">C#</span>
+            
+            <span class="tag">Micropython</span>
+            
+        </div>
+        
+        <p class="desc">
             I&nbsp;started to code when I&nbsp;Was looking for good software tools,
             which could help me in&nbsp;my research work - and found R!
             Then my journey in&nbsp;exploring programming has started.
@@ -90,12 +115,22 @@
             professional life. I'm also a&nbsp;big enthusiast of MicroPython
             on microcontrollers serving the logic and control over my DIY projects. 
         </p>
-        <img src="/pics/python.jpg" alt="Smart Plant" class="my_img_style" />
     </div>
 
     <div class="card">
         <h2 id="PalntDaddy">Plant daddy</h2>
-        <p class="project-desc">
+        
+        <div class="tags-container">
+            
+            <span class="tag">nature</span>
+            
+            <span class="tag">peace</span>
+            
+            <span class="tag">aroids</span>
+            
+        </div>
+        
+        <p class="desc">
             Yes, I'm&nbsp;keen on&nbsp;keeping plants and my home is full of&nbsp;'em.
             I'm&nbsp;also designing and creating DIY smart appliances
             dedicated specially for plant lovers! Why not to use my knowledge with
@@ -105,7 +140,6 @@
             Imagine all of the DIY smart electronic gagdest which could be&nbsp;done to&nbsp;make
             this mass of&nbsp;green organisms happy!
         </p>
-        <img src="/pics/plants.jpg" alt="Robo Spider" class="my_img_style" />
     </div>
 
 </div>
@@ -133,11 +167,30 @@
         margin-bottom: 40px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
     }
 
-    .project-desc {
+    .tags-container {
+        display: flex;
+        flex-wrap: wrap;  
+        gap: 8px;
+        margin: 15px 0;
+        
+    }
+
+    .tag {
+        background: rgba(255, 255, 255, 0.1);  
+        border: 1px dashed #444;  
+        color: #ffca28;  
+        padding: 2px 8px;
+        font-family: monospace;  
+        font-size: 0.8rem;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+
+    .desc {
         text-align: justify;
         line-height: 1.6;
     }

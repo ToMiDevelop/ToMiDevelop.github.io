@@ -91,7 +91,7 @@
             </div>
         </div>
         
-        <img src="/pics/bike_dashboard.jpg" alt="Bike Dashboard" class="my_img_style" />
+        <img src="/pics/asciiart/motor-ascii-art.png" alt="Bike Dashboard" class="my_img_style" />
     </div>
 
     <div class="card">
@@ -120,7 +120,7 @@
                 <span class="info-value status-finished">Finished</span>
             </div>
         </div>
-        <img src="/pics/robo_spider.jpg" alt="Robo Spider" class="my_img_style" />
+        <img src="/pics/asciiart/robot-ascii-art.png" alt="Robo Spider" class="my_img_style" />
     </div>
 
     <div class="card">
@@ -149,7 +149,7 @@
                 <span class="info-value status-finished">Finished</span>
             </div>
         </div>
-        <img src="/pics/smart_plant.jpg" alt="Smart Plant" class="my_img_style" />
+        <img src="/pics/asciiart/dracena-ascii-art.png" alt="Smart Plant" class="my_img_style" />
     </div>
 
     <div class="card">
@@ -183,7 +183,7 @@
                 <span class="info-value status-finished">Finished</span>
             </div>
         </div>
-        <img src="/pics/tron.jpg" alt="Tron Digits" class="my_img_style" />
+        <img src="/pics/asciiart/tron-ascii-art.png" alt="Tron Digits" class="my_img_style" />
     </div>
 </div>
 
@@ -197,7 +197,7 @@
         max-width: 1400px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
         padding: 25px;
     }
@@ -207,11 +207,17 @@
         border: 1px solid #444;  
         border-radius: 5px;
         padding: 25px;
-        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .project-desc {
+        text-align: justify;
+        line-height: 1.6;
+        flex-grow: 1;
+        margin-bottom: 15px;
     }
 
     .project-info {
@@ -219,6 +225,7 @@
         padding-top: 10px;
         font-family: monospace;
         font-size: 0.95rem;
+        max-width: 170px;
     }
 
     .info-item {
@@ -253,11 +260,6 @@
 
     .info-value a:hover {
         color: #9e9e9e;
-    }
-
-    .project-desc {
-        text-align: justify;
-        line-height: 1.6;
     }
 
     .my_img_style {
@@ -310,7 +312,7 @@
         max-width: 1000px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
         padding: 25px;
     }
@@ -321,7 +323,7 @@
         max-width: 640px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         gap: 30px;
         padding: 25px;
     }
